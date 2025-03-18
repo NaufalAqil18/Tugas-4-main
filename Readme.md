@@ -34,8 +34,8 @@ Proyek ini adalah sistem API Minimarket sederhana yang dibangun dengan Express.j
 1. Clone repositori ini:
 
 ```bash
-git clone https://github.com/username-anda/minimarket-api.git
-cd minimarket-api
+git clone https://github.com/NaufalAqil18/Tugas-4-main.git
+cd Tugas-4-main
 ```
 
 2. Instal dependensi:
