@@ -1,0 +1,12 @@
+{
+  "name": "tugas-4-main",
+  "version": "1.0.0",
+  "description": "Buatlah API sederhana dengan menggunakan express. API dapat memberikan data dan menambahkan data ke dalam sistem database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
