@@ -1,6 +1,6 @@
 const express = require("express");
 const readline = require("readline-sync");
-const DB = require("./db_operation");
+import DB from "./db_operation";
 const path = require("path");
 const app = express();
 const port = 3000;

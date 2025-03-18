@@ -1,10 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var express = require("express");
 var readline = require("readline-sync");
-var DB = require("./db_operation").default;
+var db_operation_1 = require("./db_operation");
 var path = require("path");
 var app = express();
 var port = 3000;
-var database = new DB("database.json");
+var database = new db_operation_1.default("database.json");
 app.use(express.json());
 // Add static file middleware to serve files from public directory
 app.use(express.static(path.join(__dirname, "public")));

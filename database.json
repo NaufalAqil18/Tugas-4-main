@@ -1,13 +1,7 @@
 [
   {
-    "id": 1,
-    "nama": "Beras 5kg",
-    "harga": 75000,
-    "stok": 10
-  },
-  {
     "id": 2,
-    "nama": "Minyak Goreng 1L",
+    "nama": "Minyak Goreng 12L",
     "harga": 18000,
     "stok": 20
   },
