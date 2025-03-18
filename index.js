@@ -1,6 +1,6 @@
 var express = require("express");
 var readline = require("readline-sync");
-var DB = require("./db_operation");
+var DB = require("./db_operation").default;
 var path = require("path");
 var app = express();
 var port = 3000;
