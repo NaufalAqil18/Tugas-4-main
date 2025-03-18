@@ -22,5 +22,11 @@
     "nama": "Kecap Bango",
     "harga": 17500,
     "stok": 8
+  },
+  {
+    "id": 5,
+    "nama": "Susu",
+    "harga": 50000,
+    "stok": 1
   }
 ]
