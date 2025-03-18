@@ -1,7 +1,13 @@
 [
   {
+    "id": 1,
+    "nama": "Beras 5kg",
+    "harga": 75000,
+    "stok": 10
+  },
+  {
     "id": 2,
-    "nama": "Minyak Goreng 12L",
+    "nama": "Minyak Goreng 1L",
     "harga": 18000,
     "stok": 20
   },
@@ -16,11 +22,5 @@
     "nama": "Kecap Bango",
     "harga": 17500,
     "stok": 8
-  },
-  {
-    "id": 5,
-    "nama": "Aqua Galon",
-    "harga": 28000,
-    "stok": 30
   }
 ]
