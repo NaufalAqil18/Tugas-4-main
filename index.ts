@@ -51,14 +51,14 @@ app.use((req, res, next) => {
 // ROUTES
 // Menampilkan semua item
 app.get("/items", (req, res) => {
-    const items = database.lihatSemuaItem();
+    const items:object = database.lihatSemuaItem();
     res.json({ data: items, status: "success" });
 });
 
 // Menampilkan detail item berdasarkan ID
 app.get("/items/:id", (req, res) => {
     const id: number = parseInt(req.params.id);
-    const item = database.lihatSatuItem(id);
+    const item: Item | null = database.lihatSatuItem(id);
   
     if (item) {
         res.json({ data: item, status: "success" });
@@ -81,7 +81,7 @@ app.post("/items", (req, res) => {
             .json({ message: "Data tidak lengkap", status: "error" });
     }
 
-    const newItem = database.tambahItem(nama, harga, stok);
+    const newItem: Item | null = database.tambahItem(nama, harga, stok);
     res.status(201).json({ 
         message: "Produk berhasil ditambahkan", 
         data: newItem, 
@@ -100,7 +100,7 @@ app.put("/items/:id", (req, res) => {
             .json({ message: "Data tidak lengkap", status: "error" });
     }
     
-    const updatedItem = database.updateItem(id, nama, harga, stok);
+    const updatedItem: Item | null = database.updateItem(id, nama, harga, stok);
     
     if (updatedItem) {
         res.json({ 
@@ -119,7 +119,7 @@ app.put("/items/:id", (req, res) => {
 // Menghapus item berdasarkan ID
 app.delete("/items/:id", (req, res) => {
     const id: number = parseInt(req.params.id);
-    const deletedItem = database.hapusItem(id);
+    const deletedItem: Item | null = database.hapusItem(id);
     
     if (deletedItem) {
         res.json({ 
