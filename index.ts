@@ -1,11 +1,25 @@
-import * as express from "express";
-import * as readline from "readline-sync";
+import express, { Application } from "express";
+import readline from "readline-sync";
 import DB from "./db_operation";
-import * as path from "path";
+import * as path from 'path';
 
-const app = express();
-const port = 3000;
-const database = new DB("database.json");
+const app:Application = express()
+const port: number = 3000;
+const database: DB = new DB("./database.json")
+
+interface Item {
+    id: number;
+    nama: string;
+    harga: number;
+    stok: number;
+}
+
+// Interface untuk data produk
+interface ProductData {
+    nama: string;
+    harga: number;
+    stok: number;
+}
 
 app.use(express.json());
 
@@ -33,13 +47,6 @@ app.use((req, res, next) => {
     }
     next();
 });
-
-// Interface untuk data produk
-interface ProductData {
-    nama: string;
-    harga: number;
-    stok: number;
-}
 
 // ROUTES
 // Menampilkan semua item
